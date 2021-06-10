@@ -6,13 +6,14 @@ var listTwo = ["a", "b", "c"];
 function merge(x, y) {
     if (x.length != y.length) {
         alert("I due array devono avere la stessa lunghezza")
-    };
-    var elenco = [];
+    } else {
+        var elenco = [];
 
-    for (var i = 0; i < x.length; i++) {
-        elenco.push(x[i], y[i]);
+        for (var i = 0; i < x.length; i++) {
+            elenco.push(x[i], y[i]);
+        };
+        return elenco;
     };
-    return elenco;
 };
 
 document.getElementById("printer").innerHTML = merge(listOne, listTwo);
